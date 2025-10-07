@@ -11,6 +11,9 @@
 # Сеть VSPD (Любой узел в сети Ростехнадзора):
 # wget http://10.9.103.3:8088/soft/sh/quick_sbk.sh && chmod +x quick_sbk.sh && bash quick_sbk.sh
 # wget http://10.9.103.3:8088/soft/sh/quick_sbk.sh && chmod +x quick_sbk.sh && sudo bash quick_sbk.sh
+# Любой интернет
+# wget https://github.com/barazh/quick_sbk/blob/main/quick_sbk.sh && chmod +x quick_sbk.sh && bash quick_sbk.sh
+# wget https://github.com/barazh/quick_sbk/blob/main/quick_sbk.sh && chmod +x quick_sbk.sh && sudo bash quick_sbk.sh
 
 # Форматирование цветом: echo -e "${BRED} text text ${NC}"
 # Жирный красный шрифт (Bold Red)
@@ -39,7 +42,7 @@ while [[ $# -gt 0 ]]; do
             shift
             ;;
 		-h|--help)
-            echo "Использование: $0 [-d] [-v] [-o файл]"
+            echo "Использование: $0 [-d] [-h]"
             echo "  -d, --delete    Режим удаления СПО Справки БК"
             echo "  -h, --help      Справка по аргументам"
 			rm -f quick_sbk.sh
